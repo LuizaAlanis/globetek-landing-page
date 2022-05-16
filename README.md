@@ -1,6 +1,6 @@
 # Landing-page
 
-<img src="./images/capa.png" alt="Globetek landing page"/>
+<img src="./assets/images/capa.png" alt="Globetek landing page"/>
 
 ## 🚀 Clonando o projeto
 
