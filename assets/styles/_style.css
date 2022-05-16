@@ -70,6 +70,10 @@ a{
   left: 200;
 }
 
+.text-silver{
+  color: var(--sonic-silver);
+}
+
 .left{
   padding-left: 150px;
 }
@@ -79,7 +83,7 @@ a{
 }
 
 .accent-darker{
-  background: #B4023E;
+  background: var(--pictorial-carmine);
 }
 
 .text-silver{
@@ -481,70 +485,96 @@ a.active, a:hover {
 /* #form */
 
 /* #footer */
-.footer-container{
-  width: 100vw;
-  background: var(--eerie-black);
-  color: white;
-  padding-top: 150px;
+.android{
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.darker-detail{
-  display:flex;
-  height: 108px;
-  background-color: var(--black);
-  justify-content: center;
-  align-items: center;
-  padding: 0 150px 0  150px;
-  justify-content: space-between;
+footer{
+  background-color: var(--eerie-black);
+  color: var(--white);
 }
 
-.darker-detail div{
-  display:flex;
-  gap: 50px;
+footer *{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer-main{
+  padding: 80px 80px 0px 80px;
 }
 
 .footer-content{
-  display: flex;
-  margin-left: 150px;
-  margin-right: 150px;
-  gap: 100px;
+  display: flex; 
+  flex-direction:row;
+  justify-content: space-between;
 }
 
-@media(max-width: 1000px) {
-  .footer-container{
-    padding-top: 20px;
+.darker-detail{
+  background-color: var(--black);
+  margin: 0;
+  padding: 20px 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.compatibility-list{
+  font-size: 3.5rem;
+  font-weight: 300;
+  padding-bottom: 80px;
+}
+
+@media(max-width: 1060px) {
+  .darker-detail{
+    background-color: var(--black);
+    display: flex; 
+    flex-direction:column;
+    gap: 15px;
+    padding: 50px 20px;
+    text-align: center;
   }
 
-  .left{
-    padding-left: 10px;
+  .footer-links{
+    display: flex; 
+    flex-direction:column;
+    gap: 15px;
   }
 
   .footer-content{
-    margin: 0px 0px 0px 10px!important;
-    padding: 0!important;
     display: flex; 
-    flex-direction: column;
-    justify-content: left;
-    width: 100%;
-    gap: 10px;
+    flex-direction:column;
+    gap: 30px;
+    justify-content: space-between;
+  }
+
+  .footer-main{
+    padding: 80px 40px 0px 40px;
+  }
+
+  .compatibility-list{
+    font-size: 2rem;
   }
 
   .android{
     margin: 0 auto;
-    max-width: 300px;
+    padding-top: 100px;
   }
+}
 
-  .darker-detail{
+@media(max-width: 1200px){
+  .android{
+    max-width:400px;
+    max-height:256px;
+    width: auto;
     height: auto;
-    text-align: center;
   }
+}
 
-  .darker-detail div, .darker-detail{
-    display:flex;
-    flex-direction: column;
-    gap: 2px;
-    padding: 0;
-    margin: 0;
+@media(max-width: 900px){
+  .android{
+    max-width: 90%;
   }
 }
 /* #footer */
