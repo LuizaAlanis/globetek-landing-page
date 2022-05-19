@@ -57,6 +57,7 @@ a{
 }
 
 .title-text{
+  text-align: center;
   font-size: 80px;
   font-weight: bolder;
 }
@@ -71,7 +72,7 @@ a{
 
 .subtitle{
   display: flex;
-  left: 200;
+  justify-content: center;
 }
 
 .text-silver{
@@ -104,6 +105,86 @@ a{
 /* #general style */
 
 /* #navbar */
+.flag{
+  max-width: 25px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown > a, .dropdown > button {
+  background-color: white;
+  border: none;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.bi-chevron-down{
+  font-size:15px
+}
+
+.dropdown input[type=checkbox] {
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  opacity: 0;
+}
+
+.dropdown input[type=checkbox]:checked {
+  position: fixed;
+  z-index:+0;
+  top: 0px; left: 0px; 
+  right: 0px; bottom: 0px;
+}
+
+.dropdown ul {
+  position: absolute;
+  top: 70px;
+  border-radius: 3px;
+  left: 0px;
+  list-style: none;
+  padding: 4px 0px;
+  display: none;
+  background-color: white;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.dropdown input[type=checkbox]:checked + ul {
+  display: block;
+}
+
+.dropdown ul li {
+  text-align: center;
+  display: block;
+  white-space: nowrap;
+  min-width: 100px;
+}
+
+.dropdown ul li:hover {
+  cursor: pointer;
+}
+
+.dropdown ul li a {
+  text-decoration: none;
+  display: block;
+}
+
+.select-language{
+  display: none;
+}
+
+.select-language img{
+  max-width:25px;
+}
+
 .fa{
   color: var(--winter-sky);
 }
@@ -179,9 +260,19 @@ a.active, a:hover {
     position: fixed;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   }
+  
+  .select-language{
+    display: block;
+  }
+
+  .select-desktop{
+    display: none;
+  }
+  
   .checkbtn {
     display: block;
   }
+  
   nav ul {
     position: fixed;
     height: 100vh;
@@ -195,9 +286,11 @@ a.active, a:hover {
     padding: 0;
     z-index: 5;
   }
+  
   nav ul li {
     display: block;
   }
+  
   nav ul li a {
     font-size: 20px;
     cursor: pointer;
@@ -279,12 +372,8 @@ a.active, a:hover {
 /* #primary landing page */
 
 /* #key features */
-.title-sub-container h2{ 
-  padding-left: 100px;
-}
-
 .title-main-container{
-  width: 90vw;
+  width: 100vw;
   display: flex;
   justify-content: center;
 }
@@ -340,7 +429,7 @@ a.active, a:hover {
 .text-our-partners{
   padding: 70px;
   color: var(--white);
-  font-size: 80px;
+  font-size: 60px;
   z-index: 2;
   position: relative;
   margin-top: 10px;
@@ -470,10 +559,12 @@ a.active, a:hover {
   outline: none;
   margin-top: 12px;
   margin-bottom: 12px;
+  padding: 0 10px;
 }
 
 .textarea{
-  height: 152px;
+  padding: 0 10px;
+  min-height: 156px;
   resize: none;
 }
 
@@ -584,6 +675,19 @@ footer *{
 /* #footer */
 
 /* #general responsive part */
+@media(max-width: 620px) {
+  .form-container{
+    margin-left: 10px;
+    margin-right: 10px;
+    width:auto;
+  }
+
+  .title-sub-container{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
 @media(max-width: 1000px) {
 
   .pink-rounded-background{
@@ -622,11 +726,6 @@ footer *{
     flex-direction: column;
     text-align: center;
     align-items: center;
-  }
-
-  .title-sub-container h2{ 
-    padding-left: 0;
-    text-align: center;
   }
 
   .text-max-width-large{

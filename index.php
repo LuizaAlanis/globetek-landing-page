@@ -6,10 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/styles/landing-page.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
   <title>GLOBETEK</title>
 </head>
 
 <body>
+  <?php require_once('translator.php');?>
   <!-- Navigation -->
   <header>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -21,10 +23,24 @@
       <i class="fa fa-bars"></i>
     </label>
     <ul>
-      <li>&nbsp;</li>
-      <li><a target="blank" href="https://www.globetek.com/privacy/policy">Privacy Policy</a></li>
-      <li><a target="blank" href="https://www.globetek.com/privacy/lockAPK">Terms of service</a></li>
-      <li><a href="#form"><button class="button">Contact us</button></a></li>
+      <li class="select-desktop">
+        <span class="dropdown">
+          <button><img class="flag" src="assets/images/<?php echo $lang_flag; ?>" alt="Flag EUA"> <?php echo $lang_name; ?> <i class="bi bi-chevron-down"></i></button>
+          <label>
+            <input type="checkbox">
+            <ul>
+              <li><a href="?language=en"><img class="flag" src="assets/images/flag_eua.png" alt="Flag EUA"> EN</a></li>
+              <li><a href="?language=es"><img class="flag" src="assets/images/flag_spain.png" alt="Flag Spain"> ES</a></li>
+            </ul>
+          </label>
+        </span>
+      </li>
+      <li class="select-language accent"> <?php echo $txt['select'];?></li>
+      <li class="select-language"><a href="?language=en"><img src="assets/images/flag_eua.png" alt="Flag EUA"> <?php echo $txt['english'];?></a></li>
+      <li class="select-language"><a href="?language=es"><img src="assets/images/flag_spain.png" alt="Flag Spain"> <?php echo $txt['spanish'];?></a></li>
+      <li><a href="#our-partners"><?php echo $txt['our-partners'];?></a></li>
+      <li><a href="#demo"><?php echo $txt['demonstration'];?></a></li>
+      <li><a href="#form"><button class="button"><?php echo $txt['contact-us']; ?></button></a></li>
     </ul>
   </nav>
   <!-- Navigation -->
@@ -37,16 +53,15 @@
       </div>
       <div class="landing-description responsive-text">
         <div class="text-max-width-large">
-          <p class="hi">Hi!<img src="assets/images/hand.png" alt="Hand" /></p>
-          <h1>Provider of SAAS technology to fintechs, banks and telcos in Emerging Markets</h1>
+          <p class="hi"><?php echo $txt['hi']; ?><img src="assets/images/hand.png" alt="Hand" /></p>
+          <h1><?php echo $txt['saas']; ?></h1>
           <div class="line"></div>
-          <p class="text-silver">We are a team of entrepreneurs with deep experience in online credit, tech, finance,
-            operations, marketing and analytics.</p>
+          <p class="text-silver"><?php echo $txt['we-are']; ?></p>
         </div>
       </div>
       <div class="link-center">
         <a href="#read-more">
-          <p class="accent">read more</p>
+          <p class="accent"><?php echo $txt['read-more']; ?></p>
           <img src="assets/images/arrow.png" alt="Arrow" />
         </a>
       </div>
@@ -59,8 +74,8 @@
   <div class="landing-silver-container">
     <div class="title-main-container">
       <div class="title-sub-container">
-        <p class="basic-text subtitle"> Our Remote <b> &nbsp;Smartphone Lock Solution</b></p>
-        <h2 class="title-text accent italic">Key Features</h2>
+        <p class="basic-text subtitle"><?php echo $txt['our-remote']; ?></b></p>
+        <h2 class="title-text accent italic"><?php echo $txt['key-features']; ?></h2>
       </div>
     </div>
     <div class="cards-main-container">
@@ -70,9 +85,7 @@
           <img src="assets/images/ic_lock.png" alt="Icon Lock" />
         </div>
         <div class="card-text">
-          <p>Proprietary patent-pending software solution to
-            <b class="accent"> remotely lock smartphones.*</b>
-          </p>
+          <p><?php echo $txt['lock']; ?></p>
         </div>
       </div>
 
@@ -81,7 +94,7 @@
           <img src="assets/images/ic_people.png" alt="Icon People" />
         </div>
         <div class="card-text">
-          <p>Designed for use by B2B2C Partners to <b class="accent">reduce credit risk</b> and increase approvals. </p>
+          <p><?php echo $txt['people']; ?></p>
         </div>
       </div>
 
@@ -90,10 +103,7 @@
           <img src="assets/images/ic_config.png" alt="Icon Configuration" />
         </div>
         <div class="card-text">
-          <p>The customer-facing app is customizable
-            (logo, color, message) and the devices can be managed via
-            a <b class="accent"> dashboard </b>or through an API.
-          </p>
+          <p><?php echo $txt['config']; ?></p>
         </div>
       </div>
 
@@ -102,8 +112,7 @@
           <img src="assets/images/ic_customize.png" alt="Icon Customize" />
         </div>
         <div class="card-text">
-          <p>It&apos;s also possible to <b class="accent">customize</b> the lock screen with our Partners&apos; logo and
-            desired color, as well as display a customer service phone number to call to unlock the device.</p>
+          <p><?php echo $txt['customize']; ?></p>
         </div>
       </div>
     </div>
@@ -111,15 +120,17 @@
   <!-- Key features -->
 
   <!-- Our partners -->
+  <div id="our-partners"></div>
   <div class="mobile-art">
     <div class="pink-rounded-background"></div>
-    <p class="text-our-partners">Our
-      <b class="black">Partners</b>
+    <p class="text-our-partners"><?php echo $txt['our']; ?>
+      <b class="black"><?php echo $txt['partners']; ?></b>
     </p>
   </div>
   <!-- Our partners -->
 
   <!-- Video -->
+  <div id="demo"></div>
   <div class="partner-video">
     <img class="round-sticker" src="assets/images/round_sticker.png" alt="Sticker" />
     <div class="monitor">
@@ -140,20 +151,20 @@
   <div id="form"></div>
   <div class="form-container">
     <form class="contact-form">
-      <legend class="form-title">Contact US</legend>
+      <legend class="form-title"><?php echo $txt['contact']; ?></legend>
       <div class="form-body">
         <div>
-          <label class="form-label">Name</label>
-          <input class="form-input" type="text" placeholder="Ex: Maria" />
-          <label class="form-label">E-mail</label>
-          <input class="form-input" type="text" placeholder="Ex: maria@email.com" />
+          <label class="form-label"><?php echo $txt['name']; ?></label>
+          <input class="form-input" type="text" placeholder="<?php echo $txt['name-example']; ?>" />
+          <label class="form-label"><?php echo $txt['e-mail']; ?></label>
+          <input class="form-input" type="text" placeholder="<?php echo $txt['e-mail-example']; ?>" />
         </div>
         <div>
-          <label class="form-label">Message</label>
+          <label class="form-label"><?php echo $txt['message']; ?></label>
           <textarea class="form-input textarea"></textarea>
         </div>
       </div>
-      <button class="form-button" type="submit">Submit</button>
+      <button class="form-button" type="submit"><?php echo $txt['submit']; ?></button>
     </form>
   </div>
   <!-- Form -->
@@ -162,23 +173,23 @@
   <footer>
     <div class="footer-main">
       <p class="compatibility-list">
-        Device compatibility <b class="accent">List</b>
+        <?php echo $txt['compatibility']; ?>
       </p>
       <div class="footer-content">
         <div class="footer-list">
-          <p>Supported phone manufactures</p> <br>
+          <p><?php echo $txt['supported']; ?></p> <br>
           <ul>
-            <li>&#8226; Samsung (most models)</li>
-            <li>&#8226; Xiaomi (most models)</li>
-            <li>&#8226; LG (most models)</li>
-            <li>&#8226; Motorola (most models)</li>
+            <li>&#8226; <?php echo $txt['samsung']; ?></li>
+            <li>&#8226; <?php echo $txt['xiaomi']; ?></li>
+            <li>&#8226; <?php echo $txt['lg']; ?></li>
+            <li>&#8226; <?php echo $txt['motorola']; ?></li>
           </ul>
-          <p class="accent">[more to come shortly]</p>
+          <p class="accent"><?php echo $txt['more']; ?></p>
         </div>
         <div class="footer-list">
-          <p>Operation system versions</p> <br>
+          <p><?php echo $txt['os']; ?></p> <br>
           <ul>
-            <li>&#8226; Version between 8 and 12</li>
+            <li>&#8226; <?php echo $txt['versions']; ?></li>
           </ul>
         </div>
         <img class="android" src="./assets/images/half_android.png" alt="Android" />
@@ -187,10 +198,10 @@
     
     <div class="darker-detail">
       <div class="footer-links">
-        <a target="blank" href="https://www.globetek.com/privacy/policy"><b class="accent">Privacy Policy</b></a>
-        <a target="blank" href="https://www.globetek.com/privacy/lockAPK"><b class="accent">Terms and conditions</b></a>
+        <a target="blank" href="https://www.globetek.com/privacy/policy"><b class="accent"><?php echo $txt['privacy-policy']; ?></b></a>
+        <a target="blank" href="https://www.globetek.com/privacy/lockAPK"><b class="accent"><?php echo $txt['terms-of-service']; ?></b></a>
       </div>
-      <p class="text-silver">© Globetek Holdings, LLC | All Rights Reserved.</p>
+      <p class="text-silver"><?php echo $txt['copyright']; ?></p>
     </div>
   </footer>
   <!-- Footer -->
