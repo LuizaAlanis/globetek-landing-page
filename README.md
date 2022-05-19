@@ -2,17 +2,27 @@
 
 <img src="./assets/images/capa.png" alt="Globetek landing page"/>
 
-## 🚀 Clonando o projeto
+## :robot: Viewing code and view on Replit.com
 
-Para instalar o projeto, siga estas etapas:
+> Replit is a powerful online IDE, Editor, Compiler and Interpreter. Here you can see the source code and run the project without make any installation.
 
-- Crie uma pasta chamada Landing-page
-- Faça um clone desse repositório na pasta criada
+- Access the link:
+```
+https://replit.com/@Luiza-AlanisAla/Globetek#index.php
+```
+- Click "Open website" or the green "Run" button to view
+
+## :rocket: Cloning the project
+
+To install the project, follow these steps:
+
+- Create a folder called Landing-page
+- Make a clone of this repository in the created folder
 
 ```
 git clone https://github.com/LuizaAlanis/globetek-landing-page.git
 ```
 
-## ☕ Visualizando a Landing Page
+## :coffee: Viewing the Landing Page
 
-Abra o arquivo index no navegador
+Open the index file in the browser
