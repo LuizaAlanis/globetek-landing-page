@@ -8,7 +8,7 @@
 - CSS
 - JS (Just a little)
 
-## :robot: Viewing code and view on Replit.com
+## :robot: Source code and view on Replit.com
 
 > Replit is a powerful online IDE, Editor, Compiler and Interpreter. Here you can see the source code and run the project without make any installation.
 
@@ -29,6 +29,6 @@ To install the project, follow these steps:
 git clone https://github.com/LuizaAlanis/globetek-landing-page.git
 ```
 
-## :coffee: Viewing the Landing Page
+## :coffee: Alternatives
 
 You can also use a server of your choice, like Xampp and others.
