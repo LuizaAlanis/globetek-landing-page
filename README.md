@@ -2,6 +2,12 @@
 
 <img src="./assets/images/capa.png" alt="Globetek landing page"/>
 
+## :hammer: Technologies
+- PHP
+- HTML
+- CSS
+- JS (Just a little)
+
 ## :robot: Viewing code and view on Replit.com
 
 > Replit is a powerful online IDE, Editor, Compiler and Interpreter. Here you can see the source code and run the project without make any installation.
@@ -25,4 +31,4 @@ git clone https://github.com/LuizaAlanis/globetek-landing-page.git
 
 ## :coffee: Viewing the Landing Page
 
-Open the index file in the browser
+You can also use a server of your choice, like Xampp and others.
