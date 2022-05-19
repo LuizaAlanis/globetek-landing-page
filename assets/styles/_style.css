@@ -569,8 +569,8 @@ a:hover {
 }
 
 .textarea {
-  padding: 0 10px;
-  min-height: 156px;
+  padding: 10px 10px;
+  min-height: 138px;
   resize: none;
 }
 

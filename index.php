@@ -146,18 +146,18 @@
   <!-- Form -->
   <div id="form"></div>
   <div class="form-container">
-    <form class="contact-form">
+    <form class="contact-form" action="send-email.php" method="POST">
       <legend class="form-title"><?php echo $txt['contact']; ?></legend>
       <div class="form-body">
         <div>
           <label class="form-label"><?php echo $txt['name']; ?></label>
-          <input class="form-input" type="text" placeholder="<?php echo $txt['name-example']; ?>" />
+          <input required class="form-input" name="name" type="text" placeholder="<?php echo $txt['name-example']; ?>" />
           <label class="form-label"><?php echo $txt['e-mail']; ?></label>
-          <input class="form-input" type="text" placeholder="<?php echo $txt['e-mail-example']; ?>" />
+          <input required class="form-input" name="email" type="email" placeholder="<?php echo $txt['e-mail-example']; ?>" />
         </div>
         <div>
           <label class="form-label"><?php echo $txt['message']; ?></label>
-          <textarea class="form-input textarea"></textarea>
+          <textarea required class="form-input textarea" name="message"></textarea>
         </div>
       </div>
       <button class="form-button" type="submit"><?php echo $txt['submit']; ?></button>
