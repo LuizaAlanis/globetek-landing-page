@@ -50,4 +50,3 @@ $txt['versions'] = 'Android versions between 8 and 12';
 $txt['privacy-policy'] = 'Privacy Policy';
 $txt['terms-of-service'] = 'Terms of service';
 $txt['copyright'] = '© Globetek Holdings, LLC | All Rights Reserved.';
-?>

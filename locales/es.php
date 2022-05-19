@@ -1,4 +1,4 @@
-<?php 
+<?php
 // Spanish
 $txt = array();
 
@@ -50,4 +50,3 @@ $txt['versions'] = 'Versión Android 8 a 12';
 $txt['privacy-policy'] = 'Política de Privacidad';
 $txt['terms-of-service'] = 'Términos y Condiciones';
 $txt['copyright'] = '© Globetek Holdings, LLC | Reservados todos los derechos.';
-?>

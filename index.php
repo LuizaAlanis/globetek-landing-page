@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <?php require_once('translator.php');?>
+  <?php require_once('translator.php'); ?>
   <!-- Navigation -->
   <header>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -35,11 +35,11 @@
           </label>
         </span>
       </li>
-      <li class="select-language accent"> <?php echo $txt['select'];?></li>
-      <li class="select-language"><a href="?language=en"><img src="assets/images/flag_eua.png" alt="Flag EUA"> <?php echo $txt['english'];?></a></li>
-      <li class="select-language"><a href="?language=es"><img src="assets/images/flag_spain.png" alt="Flag Spain"> <?php echo $txt['spanish'];?></a></li>
-      <li><a href="#our-partners"><?php echo $txt['our-partners'];?></a></li>
-      <li><a href="#demo"><?php echo $txt['demonstration'];?></a></li>
+      <li class="select-language accent"> <?php echo $txt['select']; ?></li>
+      <li class="select-language"><a href="?language=en"><img src="assets/images/flag_eua.png" alt="Flag EUA"> <?php echo $txt['english']; ?></a></li>
+      <li class="select-language"><a href="?language=es"><img src="assets/images/flag_spain.png" alt="Flag Spain"> <?php echo $txt['spanish']; ?></a></li>
+      <li><a href="#our-partners"><?php echo $txt['our-partners']; ?></a></li>
+      <li><a href="#demo"><?php echo $txt['demonstration']; ?></a></li>
       <li><a href="#form"><button class="button"><?php echo $txt['contact-us']; ?></button></a></li>
     </ul>
   </nav>
@@ -134,16 +134,12 @@
   <div class="partner-video">
     <img class="round-sticker" src="assets/images/round_sticker.png" alt="Sticker" />
     <div class="monitor">
-      <iframe width="882" height="497" src="https://www.youtube.com/embed/Vy5eidrLIIk" title="YouTube video player"
-        frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen></iframe>
+      <iframe width="882" height="497" src="https://www.youtube.com/embed/Vy5eidrLIIk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
     </div>
   </div>
 
   <div class="partner-video-mobile">
-    <iframe class="responsive-iframe" src="https://www.youtube.com/embed/Vy5eidrLIIk" title="YouTube video player"
-      frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen></iframe>
+    <iframe class="responsive-iframe" src="https://www.youtube.com/embed/Vy5eidrLIIk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
   </div>
   <!-- Video -->
 
@@ -195,7 +191,7 @@
         <img class="android" src="./assets/images/half_android.png" alt="Android" />
       </div>
     </div>
-    
+
     <div class="darker-detail">
       <div class="footer-links">
         <a target="blank" href="https://www.globetek.com/privacy/policy"><b class="accent"><?php echo $txt['privacy-policy']; ?></b></a>
