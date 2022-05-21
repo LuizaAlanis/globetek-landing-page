@@ -1,5 +1,8 @@
 <?php
 
+// TODO: Acho que você sabe que uso muito os recursos da IDE.
+//       E o IntelliJ sugeriu substituir esse if por isso aqui: $language = $_GET['language'] ?? 'en';
+//       Vivendo e aprendendo rs.
 if (isset($_GET['language'])) {
     $language = $_GET['language'];
 } else {

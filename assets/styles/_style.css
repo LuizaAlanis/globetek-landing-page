@@ -776,6 +776,7 @@ footer * {
   }
 
   .partner-video-mobile {
+    /* TODO: Pra mim, se você precisou usar !important, é porque algo não foi feito corretamente em algum momento */
     display: flex !important;
   }
 
