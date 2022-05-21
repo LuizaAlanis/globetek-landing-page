@@ -13,6 +13,12 @@ $body = $_POST['message'];
 $obEmail = new Email;
 $success = $obEmail -> sendEmail($senderName, $senderEmail, $address, $subject, $body);
 
+// TODO: Entendi o que você fez aqui mas confesso que eu não gostei.
+//       Primeiro porque você poderia redirecionar direto do backend.
+//       Segundo porque você mostra uma página apenas com um script pra mostrar um alert e redirecionar com Javascript.
+//       Aí te pergunto, se o navegador do usuário estiver com o JS desabilitado?
+//       Por isso que acho que usando AJAX é melhor, porque não precisa sair da página pra
+//       dizer pro usuário se a requisição foi bem sucedida. E aí não precisa de nada disso.
 $positiveFeedback = "<script LANGUAGE='JavaScript'>
     window.alert('Message sent successfully');
     window.location.href='index.php';
