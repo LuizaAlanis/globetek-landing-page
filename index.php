@@ -7,15 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/styles/landing-page.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <title>GLOBETEK</title>
 </head>
 
 <body>
   <?php require_once('translator.php'); ?>
   <!-- Navigation -->
-  <header>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  </header>
   <nav>
     <img class="logo" src="assets/images/logo_horizontal.png" alt="Logo" />
     <input type="checkbox" id="check" />
