@@ -23,19 +23,19 @@
     <ul>
       <li class="select-desktop">
         <span class="dropdown">
-          <button><img class="flag" src="assets/images/<?php echo $lang_flag; ?>" alt="Flag EUA"> <?php echo $lang_name; ?> <i class="bi bi-chevron-down"></i></button>
+          <button><img class="flag" src="assets/images/<?php echo $lang_flag; ?>" alt="Flag EUA" /> <?php echo $lang_name; ?> <i class="bi bi-chevron-down"></i></button>
           <label>
             <input type="checkbox">
             <ul>
-              <li><a href="?language=en"><img class="flag" src="assets/images/flag_eua.png" alt="Flag EUA"> EN</a></li>
-              <li><a href="?language=es"><img class="flag" src="assets/images/flag_spain.png" alt="Flag Spain"> ES</a></li>
+              <li><a href="?language=en"><img class="flag" src="assets/images/flag_eua.png" alt="Flag EUA" /> EN</a></li>
+              <li><a href="?language=es"><img class="flag" src="assets/images/flag_spain.png" alt="Flag Spain" /> ES</a></li>
             </ul>
           </label>
         </span>
       </li>
       <li class="select-language accent"> <?php echo $txt['select']; ?></li>
-      <li class="select-language"><a href="?language=en"><img src="assets/images/flag_eua.png" alt="Flag EUA"> <?php echo $txt['english']; ?></a></li>
-      <li class="select-language"><a href="?language=es"><img src="assets/images/flag_spain.png" alt="Flag Spain"> <?php echo $txt['spanish']; ?></a></li>
+      <li class="select-language"><a href="?language=en"><img src="assets/images/flag_eua.png" alt="Flag EUA" /> <?php echo $txt['english']; ?></a></li>
+      <li class="select-language"><a href="?language=es"><img src="assets/images/flag_spain.png" alt="Flag Spain" /> <?php echo $txt['spanish']; ?></a></li>
       <li><a href="#our-partners"><?php echo $txt['our-partners']; ?></a></li>
       <li><a href="#demo"><?php echo $txt['demonstration']; ?></a></li>
       <li><a href="#form"><button class="button"><?php echo $txt['contact-us']; ?></button></a></li>
